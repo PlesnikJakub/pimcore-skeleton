@@ -27,6 +27,9 @@ services:
     container_name: pimcore-php
     volumes:
       - .:/var/www/html:cached
+      - ./vendor:/var/www/html/vendor
+      - ./var/cache:/var/www/html/var/cache
+      - ./var/cach~:/var/www/html/var/cach~
     ports:
      - 80:80
      - 443:443
